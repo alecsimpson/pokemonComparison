@@ -1,0 +1,42 @@
+<div #parentDiv (click)="onClick(parentDiv)">
+  <div class="container pokemon">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <img [src]="pokemon.imageUrl">
+      </div>
+      <div class="col-md-8" style="margin: auto;">
+        <h3 id="name">{{ pokemon.name }}</h3>
+        <h5 id="type">{{ pokemon.type }}</h5>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="row">
+          <div class="col-xs-4">
+            <p id="hp">HP: <span>{{formattedStats['hp']}}</span></p>
+          </div>
+          <div class="col-xs-4">
+            <p id="attack">Attack: <span>{{formattedStats['attack']}}</span></p>
+          </div>
+          <div class="col-xs-4">
+            <p id="defence">Defence: <span>{{formattedStats['defence']}}</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <p id="specialAttack">Special Attack: <span>{{formattedStats['special-attack']}}</span></p>
+          </div>
+          <div class="col-xs-4">
+            <p id="specialDefence">Special Defence: <span>{{formattedStats['special-defence']}}</span></p>
+          </div>
+          <div class="col-xs-4">
+            <p id="speed">Speed: <span>{{formattedStats['speed']}}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+
+

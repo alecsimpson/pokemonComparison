@@ -1,0 +1,10 @@
+
+<div class="dropdown" *ngIf="initFlag===true">
+  <div *ngFor="let pokemon of pokemonList">
+    <app-item [pokemon]="pokemon" (selectedItem)="onItemSelected($event)"></app-item>
+  </div>
+  <div *ngIf="!havePokemon()">
+    <h3 style="text-align: center;">No Pokemon Found!</h3>
+  </div>
+</div>
+

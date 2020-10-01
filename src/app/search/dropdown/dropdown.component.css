@@ -1,0 +1,12 @@
+
+.dropdown {
+  max-height: 75vh;
+  max-width: 75vw;
+  overflow: auto;
+  border: solid gray 1px;
+  border-radius: 3px;
+  margin: auto;
+  padding: 0px 0px;
+  background-color: white;
+}
+
